@@ -8,5 +8,59 @@
     <script src="scripts/client.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- make a header telling me where I am-->
+    <h1>Andrew's Pizzeria</h1>
+    <!-- make a form for adding new pizza order-->
+
+    <form class="js-pizza-add-order">
+      <div>
+        <input
+          class="js-input-pizza"
+          type="text"
+          placeholder="pizza"
+          name="pizza"
+          id=""
+        />
+      </div>
+      <div>
+        $<input
+          class="js-input-price"
+          type="number"
+          placeholder="price"
+          name="price"
+          id=""
+        />
+      </div>
+      <div>
+        <input
+          class="js-input-quantity"
+          type="number"
+          placeholder="quantity"
+          name="quantity"
+          id=""
+        />
+      </div>
+      <div><button class="js-click-add-order">Add To Order</button></div>
+    </form>
+    <!-- make a table that displays all of my orders-->
+    <table class="js-table">
+      <thead>
+        <tr>
+          <th>Pizza Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      <tbody class="js-table-body">
+        <tr class="js-table-body-row">
+          <td>Pepperoni</td>
+          <td>$3</td>
+          <td>2</td>
+        </tr>
+      </tbody>
+      </thead>
+    </table>
+    <!-- display the total fo the orders-->
+    <div>Grand Total:<span class="js-total-price">$00.00</span></div>
+  </body>
 </html>
